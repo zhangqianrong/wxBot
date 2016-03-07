@@ -51,6 +51,37 @@ pip install pyqrcode
 pip install pypng
 ```
 
+安装以上库在MAC OS会报错,解决方法参考[Homebrew Python 2.7 installation](http://stackoverflow.com/questions/28447915/problems-with-upgrading-pip-in-homebrew-python-2-7-installation)
+
+```bash
+pip -v
+pip 8.1.0 from /usr/local/lib/python2.7/site-packages (python 2.7)
+```
+
+先卸载python
+
+```bash
+brew remove python
+```
+
+再次安装python
+
+```bash
+brew install python
+```
+
+然后运行pip更新
+
+```bash
+pip install --upgrade pip
+```
+
+完成之后就能看到如下提示
+
+```bash
+Successfully installed
+```
+
 ## 2 快速开发
 
 利用 **wxBot** 最简单的方法就是继承WXBot类并实现 `handle_msg_all` 或者 `schedule` 函数，然后实例化子类并调用 `run` 方法 。
@@ -230,3 +261,5 @@ python test.py
     ```python
     python bot.py
     ```
+
+
