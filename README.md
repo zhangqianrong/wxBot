@@ -81,6 +81,7 @@ pip install --upgrade pip
 ```bash
 Successfully installed
 ```
+接下来就可以安装依赖的库了!
 
 ## 2 快速开发
 
